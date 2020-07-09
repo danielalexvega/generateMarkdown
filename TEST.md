@@ -1,4 +1,4 @@
-# BANANA ROCKETSHIP
+# TEST
 
     ##Description
 
@@ -18,7 +18,7 @@
     undefined
 
     ## Usage Information
-    This program isn't so much as used, but more you are used by the program; it buries its way into your mind, making a home for itself among old brain cells and lost memories. It changes you, and not for the better. We would argue that it doesn't change you for the worse, but that has yet to be proven. We are building another app the test this app currently. It should be ready for deployment in 2022. Probably.
+    Rule number one of test is not to tell anyone about test. You did not download it from us. If you get jammed up don't mention our names. As far as we're concerned, we were hanging out late at a bar in a rough part of Detroit, and you bought a round, and then we bought a round, and one thing led to another. Either way, you have to program now, and we have a strange story and bad taste in our mouth. We haven't been that hungover since 1987.
 
     ## Guidelines
     Rule number one of test is not to tell anyone about test. You did not download it from us. If you get jammed up don't mention our names. As far as we're concerned, we were hanging out late at a bar in a rough part of Detroit, and you bought a round, and then we bought a round, and one thing led to another. Either way, you have to program now, and we have a strange story and bad taste in our mouth. We haven't been that hungover since 1987.

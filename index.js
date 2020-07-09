@@ -1,23 +1,78 @@
-// array of questions for user
+const inquirer = require('inquirer');
+const fs = require('fs');
+const md = require('./utils/generateMarkdown.js');
+const util = require('util');
+
+const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
-    'What is your project title?',
-    'Write a description of your project:',
-    'What are the installation instructions?',
-    'What is the usage information?',
-    'What are the contribution guidelines?',
-    'What are the test instructions?',
-    'What type of licence do you want?',
-    'What is your GitHub username?',
-    'What is your email address?'
+    {
+        type: 'input',
+        message: 'What is the title of your project?',
+        name: 'title'
+    },
+    {
+        type: 'input',
+        message: 'Write a description of your project.',
+        name: 'description'
+    },
+    {
+        type: 'input',
+        message: 'What are the installation instructions?',
+        name: 'installationInstructions'
+    },
+    {
+        type: 'input',
+        message: 'What is the usage information?',
+        name: 'usageInformation'
+    },
+    {
+        type: 'input',
+        message: 'What are the contribution guidelines?',
+        name: 'guidelines'
+    },
+    {
+        type: 'input',
+        message: 'What are the test instructions?',
+        name: 'testInstructions'
+    },
+    {
+        type: 'list',
+        message: 'What type of license do you want?',
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0',
+            'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        name: 'license'
+    },
+    {
+        type:'input', 
+        message:'What is your GitHub username?',
+        name:'github'
+    },
+    {
+        type:'input', 
+        message:'What is your email address?',
+        name:'email'
+    }
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+async function writeToFile(fileName, data) {
+    await writeFileAsync(fileName, data, 'utf8');
 }
 
 // function to initialize program
 function init() {
-
+    //use inquire to ask questions and get information
+    try{
+        inquirer
+            .prompt(questions)
+            .then(function (response) {
+                const {title} = response;
+                writeToFile('README.md', md(response));
+            });
+    } catch (err) {
+        console.log('There was an error');
+        console.log(err);
+    }
 }
 
 // function call to initialize program

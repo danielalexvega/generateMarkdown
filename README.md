@@ -1,36 +1,37 @@
-# BANANA ROCKETSHIP
+# GenerateMarkdown             ![License](https://img.shields.io/badge/License-MITLicense-blue)
 
-    ##Description
+##Description
 
-    TEST is a high-functioning replica of the SAT, as seen through the eyes of an overachieving student. Our algorithms take into account all factors, including, but not limited to, temperature; humidity; sound levels in the room (measured in dB), the amount of sleep the student had the previous night, the time of day, the time of year, the type of shoe the student is wearing, and more. This project will most likly change everything we know about everything. Anything you thought you knew, is now complete and total garbage. Throw that away in the trash.
+A CLI application that allows the user to create an informative README.md file with proper links after answering a set of questions.
 
-    ## Table of Contents
+## Table of Contents
 
-    * [Installation Instructions](#installation)
-    * [Usage Information](#usage)
-    * [Guidelines](#guidelines)
-    * [Test Instructions](#testInstructions)
-    * [License](#license)
-    * [Questions](#questions)
+* [Installation Instructions](#Installation)
+* [Usage Information](#Usage)
+* [Guidelines](#guidelines)
+* [Test Instructions](#Tests)
+* [License](#License)
+* [Questions](#Questions)
 
     
-    ## Installation Instructions
-    undefined
+## Installation
+Run the code using node index.js
 
-    ## Usage Information
-    This program isn't so much as used, but more you are used by the program; it buries its way into your mind, making a home for itself among old brain cells and lost memories. It changes you, and not for the better. We would argue that it doesn't change you for the worse, but that has yet to be proven. We are building another app the test this app currently. It should be ready for deployment in 2022. Probably.
+## Usage
+A user will need to input their GitHub account and email address. This should be done after the program is thought out, so you know what information should be. 
 
-    ## Guidelines
-    Rule number one of test is not to tell anyone about test. You did not download it from us. If you get jammed up don't mention our names. As far as we're concerned, we were hanging out late at a bar in a rough part of Detroit, and you bought a round, and then we bought a round, and one thing led to another. Either way, you have to program now, and we have a strange story and bad taste in our mouth. We haven't been that hungover since 1987.
+## Guidelines
+Use as you need. 
 
-    ## Test Instructions
-    Make sure your shoes are tied. I can't stress this enough. You might have to start running, so make sure you're not wearing flip-flops. Use a number 2 pencil. Show all your work. Don't erase anything. Unless you made a particularly bad mistake, then by all means, erase that. Wait till you hear the beep.  You have 48 hours to complete the exam.
+## Tests
+```
+Test it as you need. 
+```
+## License
+MIT License
 
-    ## License
-    MIT License
+## Questions
+[Github Profile](https://github.com/danielalexvega)
 
-    ## Questions
-    [Github Profile](https://github.com/danielalexvega)
-    <danielalexvega@gmail.com>
-  
+If you have a question, email me <danielalexvega@gmail.com>
   

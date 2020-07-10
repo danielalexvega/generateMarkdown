@@ -1,9 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const md = require('./utils/generateMarkdown.js');
-const util = require('util');
+const path = require('path');
 
-const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
     {
         type: 'input',
@@ -55,19 +54,18 @@ const questions = [
 ];
 
 // function to write README file
-async function writeToFile(fileName, data) {
-    await writeFileAsync(fileName, data, 'utf8');
+function writeToFile(fileName, data) {
+    fs.writeFileSync(path.join(process.cwd(),fileName), data, 'utf8');
 }
 
 // function to initialize program
 function init() {
-    //use inquire to ask questions and get information
     try{
         inquirer
             .prompt(questions)
             .then(function (response) {
-                const {title} = response;
                 writeToFile('README.md', md(response));
+                console.log('Successfully created README.md')
             });
     } catch (err) {
         console.log('There was an error');

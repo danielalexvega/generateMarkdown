@@ -1,43 +1,51 @@
 // function to generate markdown for README
 //style the markdown
 function generateMarkdown(data) {
-    //markdown....
-    return `# ${data.title}
+    let backticks = '```';
 
-    ##Description
+    return `# ${data.title}             ${generateBadge(data.license)}
 
-    ${data.description}
+##Description
 
-    ## Table of Contents
+${data.description}
 
-    * [Installation Instructions](#installation)
-    * [Usage Information](#usage)
-    * [Guidelines](#guidelines)
-    * [Test Instructions](#testInstructions)
-    * [License](#license)
-    * [Questions](#questions)
+## Table of Contents
+
+* [Installation Instructions](#Installation)
+* [Usage Information](#Usage)
+* [Guidelines](#guidelines)
+* [Test Instructions](#Tests)
+* [License](#License)
+* [Questions](#Questions)
 
     
-    ## Installation Instructions
-    ${data.installInstructions}
+## Installation
+${data.installationInstructions}
 
-    ## Usage Information
-    ${data.usageInformation}
+## Usage
+${data.usageInformation}
 
-    ## Guidelines
-    ${data.guidelines}
+## Guidelines
+${data.guidelines}
 
-    ## Test Instructions
-    ${data.testInstructions}
+## Tests
+${backticks}
+${data.testInstructions}
+${backticks}
+## License
+${data.license}
 
-    ## License
-    ${data.license}
+## Questions
+[Github Profile](https://github.com/${data.github})
 
-    ## Questions
-    [Github Profile](https://github.com/${data.github})
-    <${data.email}>
+If you have a question, email me <${data.email}>
   
-  `;
+`;
+  }
+
+  function generateBadge(license) {
+    let licenseName = license.replace(' ', '');
+    return `![License](https://img.shields.io/badge/License-${licenseName}-blue)`;
   }
   
   module.exports = generateMarkdown;

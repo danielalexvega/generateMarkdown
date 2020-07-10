@@ -8,8 +8,6 @@ A CLI application that allows the user to create an informative README.md file w
 
 * [Installation Instructions](#Installation)
 * [Usage Information](#Usage)
-* [Guidelines](#guidelines)
-* [Test Instructions](#Tests)
 * [License](#License)
 * [Questions](#Questions)
 

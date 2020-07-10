@@ -1,4 +1,4 @@
-# GenerateMarkdown             ![License](https://img.shields.io/badge/License-MITLicense-blue)
+# GenerateMarkdown                                                                                               ![License](https://img.shields.io/badge/License-MITLicense-blue)
 
 ##Description
 
@@ -20,13 +20,6 @@ Run the code using node index.js
 ## Usage
 A user will need to input their GitHub account and email address. This should be done after the program is thought out, so you know what information should be. 
 
-## Guidelines
-Use as you need. 
-
-## Tests
-```
-Test it as you need. 
-```
 ## License
 MIT License
 
